@@ -57,14 +57,7 @@ void spawner(Rule mime, char *argument) {
              term ? term : "xterm", mime.program, argument);
     spawn(command, true);
   } else {
-    if (!mime.term) {
-      snprintf(command, sizeof(command), "%s \"%s\"",
-               mime.program, argument);
-      spawn(command, true);
-    } else {
-      snprintf(command, sizeof(command), "%s \"%s\"", mime.program, argument);
-      spawn(command, false);
-    }
+    spawn(command, !mime.term);
   }
 }
 
