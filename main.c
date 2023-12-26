@@ -1,11 +1,11 @@
 
+#include <magic.h>
+#include <stdarg.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
-#include <magic.h>
-#include <stdbool.h>
 
 #define LENGTH(x) (sizeof x / sizeof x[0])
 
@@ -92,6 +92,6 @@ int main(int argc, char *argv[]) {
     }
   }
 
-  printf("%s\n", argv[1]);  // no match
+  printf("%s\n", argv[1]); // no match
   return EXIT_SUCCESS;
 }
