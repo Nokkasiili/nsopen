@@ -1,6 +1,6 @@
 #define BROWSER "chromium"
-#define EDITOR "kak"
-#define MEDIA "mplayer"
+#define EDITOR "nvim"
+#define MEDIA "mpv"
 static Rule protocols[] = {
   {"http://"                 ,BROWSER                                           ,false} ,
   {"https://"                ,BROWSER                                           ,false} ,
